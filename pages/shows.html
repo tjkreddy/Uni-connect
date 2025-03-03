@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies & Events - MovieTime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shows.css">
+</head>
+<body class="bg-light">
+    <!-- Add Full Navigation Bar -->
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="./news.html" class="nav-link px-2 text-white">Campus News</a></li>
+                    <li><a href="./calendar.html" class="nav-link px-2 text-white">Calendar</a></li>
+                    <li><a href="./shows.html" class="nav-link px-2 text-white active">Book Tickets</a></li>
+                    <li><a href="./services.html" class="nav-link px-2 text-white">Student Services</a></li>
+                </ul>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <!-- Date Selection -->
+        <div class="dates-strip mb-4">
+            <div class="date-item active">
+                <div class="day">Today</div>
+                <div class="date">15</div>
+                <div class="month">MAR</div>
+            </div>
+            <div class="date-item">
+                <div class="day">Tomorrow</div>
+                <div class="date">16</div>
+                <div class="month">MAR</div>
+            </div>
+        </div>
+
+        <!-- Movies/Events List -->
+        <div class="movies-container">
+            <h3 class="mb-4">Available Shows</h3>
+            
+            <!-- Movie Card -->
+            <div class="movie-card card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="../assets/images/inception.jpg" class="img-fluid rounded-start movie-poster" alt="Inception">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="movie-title">Inception</h5>
+                            <div class="movie-meta">
+                                <span class="badge bg-light text-dark">UA</span>
+                                <span class="text-muted">2h 28m</span>
+                                <span>•</span>
+                                <span>Sci-Fi</span>
+                                <span>•</span>
+                                <span>English</span>
+                            </div>
+                            <p class="movie-timing mt-2">
+                                <i class="bi bi-clock"></i> Show Time: 7:30 PM
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <a href="./booking.html" class="btn btn-primary book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Movie Cards -->
+            <div class="movie-card card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="../assets/images/avatar.jpg" class="img-fluid rounded-start movie-poster" alt="Avatar">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="movie-title">Avatar: The Way of Water</h5>
+                            <div class="movie-meta">
+                                <span class="badge bg-light text-dark">UA</span>
+                                <span class="text-muted">3h 12m</span>
+                                <span>•</span>
+                                <span>Adventure</span>
+                                <span>•</span>
+                                <span>English</span>
+                            </div>
+                            <p class="movie-timing mt-2">
+                                <i class="bi bi-clock"></i> Show Time: 2:30 PM
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <a href="./booking.html" class="btn btn-primary book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+</html>

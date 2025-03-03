@@ -1,1 +1,1 @@
-# Uni-connect
+# SE-Project
